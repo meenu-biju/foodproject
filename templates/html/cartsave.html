@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>starter</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<div class="container" style="padding-bottom: 30px; padding-top: 30px;">
+<form action="/foodapp/order" method="post">
+    {% csrf_token %}
+    <div class="col-md-6">
+    <label for="inputName4" class="form-label">ITEM NAME</label>
+    <select id="inputItem" name="name" class="form-select">
+        <option selected>Choose...</option>
+        <option>Mutton Curry</option>
+        <option>Strawberry Shake</option>
+        <option>Chilli Beef</option>
+        <option>Cheese Burger</option>
+        <option>Mutton Sandwitch</option>
+        <option>Third Palace</option>
+        <option>Choclate Shake</option>
+        <option>Meat Cheese Pizza</option>
+        <option>Tamilnadu Meals</option>
+        <option>Chicken Tikka</option>
+        <option>Mutton Roast</option>
+        <option>Berries Lime</option>
+        <option>Kerala Veg Meals</option>
+        <option>Chicken Keema Ball</option>
+        <option>Lemon Tea</option>
+        <option>Chicken Kabab</option>
+         <option>Combo Offer</option>
+         <option>Special Combo Offer</option>
+         <option>Chicken Kabab</option>
+    </select>
+</div>
+        <div class="col-md-6">
+    <label for="inputPhone4" class="form-label">YOUR PHONE</label>
+    <input type="text" name="phone" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputAddress" class="form-label">YOUR ADDRESS</label>
+    <input type="text" name="address" class="form-control" id="inputAddress" >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputRestaurant" class="form-label">RESTAURANTS AVAILABLE</label>
+    <select id="inputRestaurant" name="hotel" class="form-select">
+      <option selected>Choose...</option>
+      <option>Rice Boat</option>
+        <option>M-grill</option>
+        <option>Work & Grill</option>
+        <option>Tharavadu Hotel</option>
+        <option>Garden's Icecream's</option>
+        <option>Paragon Hotel</option>
+        <option>Rasoi Restaurant</option>
+        <option>Ajwa Hotel</option>
+        <option>Trilogi Restaurant</option>
+        <option>Coffee Temple</option>
+        <option>Third Palace</option>
+        <option>Wheels Restaurant</option>
+        <option>Ramees Hotel</option>
+    </select>
+  </div>
+
+    <div class="col-md-6">
+    <label for="inputPayment" class="form-label">PAYMENT METHODS</label>
+    <select id="inputPayment" name="payment" class="form-select">
+
+        <option>COD (Cash on Delivery)</option>
+            </select>
+  </div>
+    <br>
+    <div>
+        <button type="submit" class="btn btn-success">ORDER</button>
+        <button type="reset" class="btn btn-danger">CANCEL</button>
+    </div>
+    <br>
+    <div>
+        <h4>{{ c }}</h4>
+    </div>
+<br><br>
+  <div class="col-12">
+    <a href="/foodapp/yourcart" class="btn btn-primary">Go To Your Cart</a>
+  </div>
+</form>
+</div>
+
+{% include "html/footer.html" %}
+</body>
+</html>

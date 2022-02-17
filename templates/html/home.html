@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<div class="container">
+    <div><h1>Inspiration For You.....</h1></div>
+<div class="row">
+  <div class="col-sm-4">
+  <img src="{% static 'images/combo1.png' %}"  alt="..." width="350px;" height="350px">
+      <p><h5><center>Special Offer's</center></h5></p>
+  </div>
+    <div class="col-sm-4">
+  <img src="{% static 'images/home5.jpg' %}"  alt="..." width="350px;" height="350px">
+        <p><h5><center>Variety Starter's</center> </h5></p>
+  </div>
+    <div class="col-sm-4">
+  <img src="{% static 'images/home3.png' %}"  alt="..." width="350px;" height="350px">
+        <p><h5><center>Milk Shakes</center></h5></p>
+ </div>
+</div>
+<br>
+    <br>
+       <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="/foodapp/menu" class="btn btn-success"><h5 style="font-family: Britannic Bold;">Let's Start Your Menu</h5></a>
+
+</div>
+   <br>
+    <br>
+</div>
+{%  include "html/footer.html" %}
+</body>
+</html>

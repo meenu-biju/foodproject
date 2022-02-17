@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container border bg-dark text-white" style="padding-top: 35px; padding-bottom: 35px;">
+
+<form action="/foodapp/register" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">USERNAME</label>
+  <input type="text" name="username" class="form-control" id="formGroupExampleInput" placeholder="username">
+</div>
+    <div class="mb-3">
+         <label for="formGroupExampleInput2" class="form-label">EMAIL</label>
+  <input type="text" name="email"  class="form-control" id="formGroupExampleInput" placeholder="email">
+</div>
+     <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">PASSWORD</label>
+  <input type="password" name="password1" class="form-control" id="formGroupExampleInput" placeholder="password">
+</div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">CONFIRM PASSWORD</label>
+  <input type="password" name="password2" class="form-control" id="formGroupExampleInput"  placeholder="confirm password">
+</div>
+    <center>
+   <button type="submit" class="btn btn-success">REGISTER</button>
+    <button type="reset" class="btn btn-danger">CANCEL</button><br>
+
+        <div> <h3>{{ c}}</h3></div>
+        <div><h3>{{ m }}</h3></div>
+    </center>
+<br>
+    <br><center>
+   <a href="/foodapp/login" class="btn btn-warning btn-sm">LOGIN </a>
+</center>
+    <div>
+        {% for i in messages %}
+         <h4 >{{i}}</h4>
+        {% endfor %}
+    </div>
+</form>
+</div>
+<div>
+</div>
+</body>
+</html>

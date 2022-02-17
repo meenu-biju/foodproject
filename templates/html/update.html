@@ -1,0 +1,10 @@
+ {% include "html/header.html" %}
+
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-success">update</button>
+    </form>
+ </div>
+ {% include "html/footer.html" %}

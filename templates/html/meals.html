@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meals</title>
+</head>
+<body>
+{% include "html/header.html" %}
+
+<div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+    <h1>Differnt Meals and Favourite Curries</h1><br>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/me1.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Kerala Veg Meals</h5>
+        <h7>Tharavadu Hotel</h7>
+          <p>Price : $200</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/cur1.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Mutta Roast</h5>
+        <h7>Paragon Restaurant</h7>
+           <p>Price : $150</p>
+          <p><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/me2.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Tamilnadu Meals</h5>
+        <h7>Ajwa Restaurant</h7>
+           <p>Price : $200</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/me3.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">North indian Meals</h5>
+        <h7>Third Palace</h7>
+           <p>Price : $300</p>
+          <p><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/home2.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Chilli Beef</h5>
+        <h7>Raosi Restaurant</h7>
+           <p>Price : $350</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/home1.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Mutton Curry</h5>
+        <h7>Ramees Hotel</h7>
+           <p>Price : $500</p>
+          <p><i class="far fa-star"></i>i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% include "html/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<table border="2" class="table table-striped table-bordered table-sm" style="margin-top: 50px;">
+     <thead class="thead-dark">
+     <tr>
+         <th> FOOD NAME</th>
+         <th> CUSTOMER ADDRESS</th>
+         <th> CUSTOMER PHONE</th>
+         <th> RESTAURANT</th>
+          <th> PAYMENT</th>
+     </tr>
+     </thead>
+<tbody>
+     {% for i in member %}
+          <tr>
+         <td>{{ i.name}}</td>
+         <td> {{ i.address }}</td>
+         <td> {{ i.phone }}</td>
+         <td> {{ i.hotel }}</td>
+         <td> {{ i.payment }}</td>
+         <td>
+           <a href="/foodapp/delete/{{ i.id }}"><b>DELETE</b></a>&nbsp;&nbsp;
+           <a href="/foodapp/update/{{ i.id }}"><b>EDIT</b></a>
+          </td>
+          </tr>
+      {% endfor %}
+</table>
+<br>
+<br>
+<center><a href="/foodapp/cartsave" class="btn btn-info"><h4>Place Another Order</h4></a> </center>
+<br>
+<br>
+<br>
+{% include "html/footer.html" %}
+</body>
+</html>

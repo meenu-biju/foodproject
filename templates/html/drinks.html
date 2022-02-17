@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>drinks</title>
+</head>
+<body>
+{% include "html/header.html" %}
+<div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+    <h1>Choose Your Drinks & Shakes</h1><br>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/d3.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Lemon Tea</h5>
+        <h7>M-grill Restaurant</h7>
+           <p>Price : $75</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/d1.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Berries Lime</h5>
+        <h7>Garden's Icecream Parlour</h7>
+           <p>Price : $100</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/d5.png' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Choclate Shake</h5>
+        <h7>Coffee Temple</h7>
+           <p>Price : $200</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/shake.jpg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Strawbery Shake</h5>
+        <h7>Coffee Temple</h7>
+           <p>Price : $300</p>
+          <p><i class="far fa-star"></i><i class="far fa-star"></i></p>
+           <a href="/foodapp/cartsave" class="btn btn-warning btn-sm">Add to cart </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% include "html/footer.html" %}
+</body>
+</html>
